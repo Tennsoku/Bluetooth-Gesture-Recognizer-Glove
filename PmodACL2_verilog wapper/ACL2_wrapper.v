@@ -36,16 +36,6 @@ module acc_wrapper(
     output wire done_init,
     output wire done_read
     );
-
-    wire signed [15:0] x_axis_raw;
-    wire signed [15:0] y_axis_raw;
-    wire signed [15:0] z_axis_raw;
-    
-    // HACK
-    assign x = x_axis_raw;
-    assign y = y_axis_raw;
-    assign z = z_axis_raw;
-     
     
     acc_interface uacc_interface(
         .clk(clk),
@@ -56,9 +46,9 @@ module acc_wrapper(
         .mosi(mosi),
         .sclk(sclk),
         .chip_select(chip_select),
-        .x_axis(x_axis_raw),
-        .y_axis(y_axis_raw),
-        .z_axis(z_axis_raw),
+        .x_axis(x),
+        .y_axis(y),
+        .z_axis(z),
         .done_init(done_init),
         .done_read(done_read)
     );    

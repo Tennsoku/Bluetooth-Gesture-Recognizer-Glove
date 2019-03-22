@@ -59,19 +59,6 @@ module acc_interface(
         .y_axis(y_axis),
         .z_axis(z_axis)
     );
-    
-    // SPIinterface C1(
-    //     .clk(clk),
-    //     .rst(rst),
-    //     .txbuffer(send_data), 
-    //     .transmit(begin_transmission),
-    //     .miso(miso),
-
-    //     .rxbuffer(received_data),
-    //     .done_out(end_transmission),
-    //     .mosi(mosi),
-    //     .sclk(sclk)
-    // );
 
     SPIinterface C1(
         .send_data(send_data), 
@@ -86,12 +73,4 @@ module acc_interface(
         .sclk(sclk),
         .chip_select(chip_select)
     );
-    
-    // chipSelect C2(
-    //     .clk(clk),
-    //     .cs(chip_select),
-    //     .done(end_transmission),
-    //     .transmit(begin_transmission),
-    //     .rst(rst)
-    // );
 endmodule
