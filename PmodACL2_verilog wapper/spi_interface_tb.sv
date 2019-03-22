@@ -84,9 +84,9 @@ module spi_interface_tb();
         begin_transmission = 1;
         
         // master_data (send_data), slave_data (received_data)
-        spi_transfer(8'h29, 8'hab);
-        assert(received_data == 8'hab);
-        assert(sreg == 8'h29);
+        spi_transfer(8'h11, 8'h22);
+        assert(received_data == 8'h22);
+        assert(sreg == 8'h11);
         
         begin_transmission = 0;
         
@@ -96,14 +96,14 @@ module spi_interface_tb();
         begin_transmission = 1;
         
         // Multi byte transfer, slave_initially sends garbage data
-        spi_transfer(8'h77, 8'h66);
-        assert(received_data == 8'h66);
-        assert(sreg == 8'h77);
+        spi_transfer(8'h0A, 8'h00);
+        assert(received_data == 8'h00);
+        assert(sreg == 8'h0A);
         
         // slave responds with actual data in next byte
-        spi_transfer(8'h66, 8'h91);
-        assert(received_data == 8'h91);
-        assert(sreg == 8'h66);
+        spi_transfer(8'h01, 8'h00);
+        assert(received_data == 8'h00);
+        assert(sreg == 8'h01);
         
         begin_transmission = 0;
         wait(chip_select == 1'b1);

@@ -23,7 +23,7 @@
 module board_wrapper(
     input wire BTNC,
     input wire CLK100MHZ,
-    input wire [3:0] SW,
+    input wire [15:0] SW,
     output wire [7:0] AN,
     output wire [6:0] SEG,
     output wire DP,
@@ -45,7 +45,11 @@ module board_wrapper(
     // assign LED[0] = done_init;
     // assign LED[1] = done_read;
     // assign LED[2] = 1;
-    assign LED[15:0] = x[15:0];
+    assign LED[15:0] =  (SW[15:13] == 3'b000) ? JA[5] :
+                        (SW[15:13] == 3'b001) ? x :
+                        (SW[15:13] == 3'b010) ? y :
+                        (SW[15:13] == 3'b011) ? z :
+                        done_init;
     
     always @(*) begin
         case(SW[2:1])
@@ -60,7 +64,7 @@ module board_wrapper(
         .clk(CLK100MHZ),
         .rst(BTNC),
         .filter_rst(BTNC | ~SW[0]),
-        .interrupt(SW[3]),
+        .interrupt(JA[5]),
         .start(SW[0]),
         .miso(JA[3]),
         .mosi(JA[2]),
@@ -74,7 +78,7 @@ module board_wrapper(
     );
     
     hex_display_controller #(
-        .cnt_val(43000)
+        .cnt_val(25000)
     ) uhex_controller(
         .rst(BTNC),
         .clk(CLK100MHZ),

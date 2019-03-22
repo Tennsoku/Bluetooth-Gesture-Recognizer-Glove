@@ -57,8 +57,8 @@ module SPImaster(
 
     //Commands before addr assign
     parameter [7:0]
-        READ_REG = 8'h0A,
-        WRITE_REG = 8'h0B,
+        READ_REG = 8'h0B,
+        WRITE_REG = 8'h0A,
         READ_FIFO = 8'h0D;
 
     // Reg Address
@@ -88,7 +88,7 @@ module SPImaster(
     reg [7:0] ADDRESS;
     reg [7:0] DATA;
     
-    reg [2:0] transfer_count;
+    reg [3:0] transfer_count;
     
     always @(posedge clk) begin
         if (rst == 1'b1) begin
@@ -124,41 +124,53 @@ module SPImaster(
                         PREV_STATE <= INIT;
                         STATE <= TRANSFER_COMMAND;
                         
-                        if (transfer_count < 0) begin
+                        if (transfer_count < 8) begin
                             case (transfer_count)
                                 0:
                                     begin
-                                        ADDRESS <= THRESH_ACT_L; // (4g 100Hz HALF_BW)
-                                        DATA    <= 8'hFA;
+                                        ADDRESS <= THRESH_ACT_L; // Sets activity threshold to 300 mg - Low byte
+                                        DATA    <= 8'h2C;
                                     end
                                     
                                 1:
                                     begin
-                                        ADDRESS <= THRESH_INACT_L; // Enable interrupt 1 Data Ready
-                                        DATA    <= 8'h96;
+                                        ADDRESS <= THRESH_ACT_L + 1'b1; // Sets activity threshold to 300 mg - High byte
+                                        DATA    <= 8'h01;
                                     end
-
+                                    
                                 2:
                                     begin
-                                        ADDRESS <= TIME_INACT_L; // Turn Measurement on
-                                        DATA    <= 8'h1E;
+                                        ADDRESS <= THRESH_INACT_L; // Sets inactivity threshold to 200 mg
+                                        DATA    <= 8'hC8;
                                     end
 
                                 3:
                                     begin
-                                        ADDRESS <= ACT_INACT_CTL; // Turn Measurement on
-                                        DATA    <= 8'h3F;
+                                        ADDRESS <= TIME_INACT_L; //  Sets inactivity timer to 30 samples or about 5 seconds.
+                                        DATA    <= 8'h1E;
                                     end
 
                                 4:
                                     begin
-                                        ADDRESS <= INTMAP2; // Turn Measurement on
-                                        DATA    <= 8'h40;
+                                        ADDRESS <= ACT_INACT_CTL; // Configures motion detection in loop mode and enables referenced activity and inactivity detection.
+                                        DATA    <= 8'h3F;
                                     end
 
                                 5:
                                     begin
-                                        ADDRESS <= POWER_CTL; // Turn Measurement on
+                                        ADDRESS <= INTMAP2; // Map the AWAKE bit to INT2. 
+                                        DATA    <= 8'h40;
+                                    end
+                                    
+                                6:
+                                    begin
+                                        ADDRESS <= FILTER_CTL; // (4g 100Hz)
+                                        DATA    <= V_FILTER_CTL;
+                                    end
+
+                                7:
+                                    begin
+                                        ADDRESS <= POWER_CTL; // begins the measurement in wake-up mode.
                                         DATA    <= 8'h0A;
                                     end
                                     
@@ -244,7 +256,7 @@ module SPImaster(
                 READ_Y_L:
                     begin
                         if (end_transmission == 1'b1) begin
-                            STATE <= READ_Z_H;
+                            STATE <= READ_Y_H;
                             axis_data[23:16] <= received_data;
                         end
                     end
@@ -296,7 +308,7 @@ module SPImaster(
                             y_axis <= 0;
                             z_axis <= 0;
                         end else if (interrupt == 1'b1) begin
-                            ADDRESS <= 8'b00;
+                            ADDRESS <= XDATA_L;
                             PREV_STATE <= RUN;
                             STATE <= TRANSFER_COMMAND;
 //                         end else begin                  // Interrupt is 0 at this moment
