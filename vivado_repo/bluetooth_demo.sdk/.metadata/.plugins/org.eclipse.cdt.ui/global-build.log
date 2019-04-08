@@ -1,0 +1,799 @@
+00:02:56 **** Build of project bluetooth_demo_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/sensor_fusion_axi_v1_0/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/sensor_fusion_axi_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/sensor_fusion_axi_v1_0/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/sensor_fusion_axi_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling sensor_fusion_axi..."
+sensor_fusion_axi_selftest.c: In function 'SENSOR_FUSION_AXI_Reg_SelfTest':
+sensor_fusion_axi_selftest.c:52:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( SENSOR_FUSION_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                  ^~
+sensor_fusion_axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+00:03:00 **** Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3120	    324	   3108	   6552	   1998	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:04:03 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:05:43 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/sensor_fusion_driver.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sensor_fusion_driver.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sensor_fusion_driver.d" -MT"src/sensor_fusion_driver.o" -o "src/sensor_fusion_driver.o" "../src/sensor_fusion_driver.c"
+Finished building: ../src/sensor_fusion_driver.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3120	    324	   3108	   6552	   1998	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:06:06 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/sensor_fusion_driver.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sensor_fusion_driver.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sensor_fusion_driver.d" -MT"src/sensor_fusion_driver.o" -o "src/sensor_fusion_driver.o" "../src/sensor_fusion_driver.c"
+Finished building: ../src/sensor_fusion_driver.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7252	    328	   3108	  10688	   29c0	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:07:13 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:14:53 **** Clean-only build of project bluetooth_demo_bsp ****
+make -k clean 
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/intc_v3_7/src -s clean 
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/sensor_fusion_axi_v1_0/src -s clean 
+E:\SDK\2018.1\gnuwin\bin\rm.exe: cannot lstat `*.o': Invalid argument
+make[1]: *** [clean] Error 1
+make: *** [microblaze_0/libsrc/sensor_fusion_axi_v1_0/src/make.clean] Error 2
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_6/src -s clean 
+E:\SDK\2018.1\gnuwin\bin\make: invalid option -- c
+E:\SDK\2018.1\gnuwin\bin\make: invalid option --  
+E:\SDK\2018.1\gnuwin\bin\make: invalid option -- E
+E:\SDK\2018.1\gnuwin\bin\make: invalid option -- X
+E:\SDK\2018.1\gnuwin\bin\make: invalid option -- T
+E:\SDK\2018.1\gnuwin\bin\make: invalid option -- A
+E:\SDK\2018.1\gnuwin\bin\make: invalid option -- _
+Usage: make [options] [target] ...
+Options:
+  -b, -m                      Ignored for compatibility.
+  -B, --always-make           Unconditionally make all targets.
+  -C DIRECTORY, --directory=DIRECTORY
+                              Change to DIRECTORY before doing anything.
+  -d                          Print lots of debugging information.
+  --debug[=FLAGS]             Print various types of debugging information.
+  -e, --environment-overrides
+                              Environment variables override makefiles.
+  -f FILE, --file=FILE, --makefile=FILE
+                              Read FILE as a makefile.
+  -h, --help                  Print this message and exit.
+  -i, --ignore-errors         Ignore errors from commands.
+  -I DIRECTORY, --include-dir=DIRECTORY
+                              Search DIRECTORY for included makefiles.
+  -j [N], --jobs[=N]          Allow N jobs at once; infinite jobs with no arg.
+  -k, --keep-going            Keep going when some targets can't be made.
+  -l [N], --load-average[=N], --max-load[=N]
+                              Don't start multiple jobs unless load is below N.
+  -L, --check-symlink-times   Use the latest mtime between symlinks and target.
+  -n, --just-print, --dry-run, --recon
+                              Don't actually run any commands; just print them.
+  -o FILE, --old-file=FILE, --assume-old=FILE
+                              Consider FILE to be very old and don't remake it.
+  -p, --print-data-base       Print make's internal database.
+  -q, --question              Run no commands; exit status says if up to date.
+  -r, --no-builtin-rules      Disable the built-in implicit rules.
+  -R, --no-builtin-variables  Disable the built-in variable settings.
+  -s, --silent, --quiet       Don't echo commands.
+  -S, --no-keep-going, --stop
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+                              Turns off -k.
+  -t, --touch                 Touch targets instead of remaking them.
+  -v, --version               Print the version number of make and exit.
+  -w, --print-directory       Print the current directory.
+  --no-print-directory        Turn off -w, even if it was turned on implicitly.
+  -W FILE, --what-if=FILE, --new-file=FILE, --assume-new=FILE
+                              Consider FILE to be infinitely new.
+  --warn-undefined-variables  Warn when an undefined variable is referenced.
+
+This program built for i386-pc-mingw32
+Report bugs to <bug-make@gnu.org>
+make[1]: *** [clean] Error 2
+make: *** [microblaze_0/libsrc/standalone_v6_6/src/make.clean] Error 2
+make: Target `clean' not remade because of errors.
+00:14:53 **** Clean-only build of configuration Debug for project bluetooth_demo ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o  ./src/helloworld.d ./src/platform.d ./src/sensor_fusion_driver.d  bluetooth_demo.elf.size  bluetooth_demo.elf
+ 
+00:14:53 **** Build of project bluetooth_demo_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/sensor_fusion_axi_v1_0/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/sensor_fusion_axi_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/sensor_fusion_axi_v1_0/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/sensor_fusion_axi_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling sensor_fusion_axi..."
+sensor_fusion_axi_selftest.c: In function 'SENSOR_FUSION_AXI_Reg_SelfTest':
+sensor_fusion_axi_selftest.c:52:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( SENSOR_FUSION_AXI_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                  ^~
+sensor_fusion_axi_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_6/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+E:/SDK/2018.1/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+00:14:57 **** Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/sensor_fusion_driver.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sensor_fusion_driver.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sensor_fusion_driver.d" -MT"src/sensor_fusion_driver.o" -o "src/sensor_fusion_driver.o" "../src/sensor_fusion_driver.c"
+Finished building: ../src/sensor_fusion_driver.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7252	    328	   3108	  10688	   29c0	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:15:09 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../src/helloworld.c:70:17: error: 'XPAR_BT_UART_INST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_BT_UART_BASEADDR'?
+  XUartLite_Send(XPAR_BT_UART_INST_BASEADDR, testbuffer, 70);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                 XPAR_BT_UART_BASEADDR
+../src/helloworld.c:70:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:70:45: warning: pointer targets in passing argument 2 of 'XUartLite_Send' differ in signedness [-Wpointer-sign]
+  XUartLite_Send(XPAR_BT_UART_INST_BASEADDR, testbuffer, 70);
+                                             ^~~~~~~~~~
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+00:15:54 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../src/helloworld.c:70:17: error: 'XPAR_BT_UART_INST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_BT_UART_BASEADDR'?
+  XUartLite_Send(XPAR_BT_UART_INST_BASEADDR, (u8) testbuffer, 70);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                 XPAR_BT_UART_BASEADDR
+../src/helloworld.c:70:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:70:45: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  XUartLite_Send(XPAR_BT_UART_INST_BASEADDR, (u8) testbuffer, 70);
+                                             ^
+../src/helloworld.c:70:45: warning: passing argument 2 of 'XUartLite_Send' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'unsigned char'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+00:16:10 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../src/helloworld.c:70:17: error: 'XPAR_BT_UART_INST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_BT_UART_BASEADDR'?
+  XUartLite_Send(XPAR_BT_UART_INST_BASEADDR, (u8*) testbuffer, 70);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                 XPAR_BT_UART_BASEADDR
+../src/helloworld.c:70:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+00:16:33 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../bluetooth_demo_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../../bluetooth_demo_bsp/microblaze_0/include/xparameters.h:623:31: warning: passing argument 1 of 'XUartLite_Send' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_BT_UART_BASEADDR 0x40610000
+                               ^
+../src/sensor_fusion_driver.h:25:24: note: in expansion of macro 'XPAR_BT_UART_BASEADDR'
+ #define BT_BASEADDRESS XPAR_BT_UART_BASEADDR
+                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:70:17: note: in expansion of macro 'BT_BASEADDRESS'
+  XUartLite_Send(BT_BASEADDRESS, (u8*) testbuffer, 70);
+                 ^~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'XUartLite * {aka struct <anonymous> *}' but argument is of type 'int'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84736	   1496	   3192	  89424	  15d50	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:17:08 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:18:38 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../bluetooth_demo_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../../bluetooth_demo_bsp/microblaze_0/include/xparameters.h:623:31: warning: passing argument 1 of 'XUartLite_Send' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_BT_UART_BASEADDR 0x40610000
+                               ^
+../src/sensor_fusion_driver.h:25:24: note: in expansion of macro 'XPAR_BT_UART_BASEADDR'
+ #define BT_BASEADDRESS XPAR_BT_UART_BASEADDR
+                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:70:17: note: in expansion of macro 'BT_BASEADDRESS'
+  XUartLite_Send(BT_BASEADDRESS, (u8*) testbuffer, 4);
+                 ^~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'XUartLite * {aka struct <anonymous> *}' but argument is of type 'int'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7908	    332	   3120	  11360	   2c60	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:19:04 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:20:34 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7372	    328	   3108	  10808	   2a38	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:21:02 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:22:04 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../bluetooth_demo_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../../bluetooth_demo_bsp/microblaze_0/include/xparameters.h:623:31: warning: passing argument 1 of 'XUartLite_Send' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_BT_UART_BASEADDR 0x40610000
+                               ^
+../src/sensor_fusion_driver.h:25:24: note: in expansion of macro 'XPAR_BT_UART_BASEADDR'
+ #define BT_BASEADDRESS XPAR_BT_UART_BASEADDR
+                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:71:17: note: in expansion of macro 'BT_BASEADDRESS'
+  XUartLite_Send(BT_BASEADDRESS, (u8*) testbuffer, 4);
+                 ^~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'XUartLite * {aka struct <anonymous> *}' but argument is of type 'int'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7908	    332	   3120	  11360	   2c60	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:22:35 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:24:06 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../bluetooth_demo_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../../bluetooth_demo_bsp/microblaze_0/include/xparameters.h:623:31: warning: passing argument 1 of 'XUartLite_Send' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_BT_UART_BASEADDR 0x40610000
+                               ^
+../src/sensor_fusion_driver.h:25:24: note: in expansion of macro 'XPAR_BT_UART_BASEADDR'
+ #define BT_BASEADDRESS XPAR_BT_UART_BASEADDR
+                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:71:17: note: in expansion of macro 'BT_BASEADDRESS'
+  XUartLite_Send(BT_BASEADDRESS, (u8*) testbuffer, 4);
+                 ^~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'XUartLite * {aka struct <anonymous> *}' but argument is of type 'int'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7924	    332	   3120	  11376	   2c70	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:24:18 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../bluetooth_demo_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:51:
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../../bluetooth_demo_bsp/microblaze_0/include/xparameters.h:623:31: warning: passing argument 1 of 'XUartLite_Send' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_BT_UART_BASEADDR 0x40610000
+                               ^
+../src/sensor_fusion_driver.h:25:24: note: in expansion of macro 'XPAR_BT_UART_BASEADDR'
+ #define BT_BASEADDRESS XPAR_BT_UART_BASEADDR
+                        ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:71:17: note: in expansion of macro 'BT_BASEADDRESS'
+  XUartLite_Send(BT_BASEADDRESS, testbuffer, 5);
+                 ^~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:53:0:
+../../bluetooth_demo_bsp/microblaze_0/include/xuartlite.h:256:14: note: expected 'XUartLite * {aka struct <anonymous> *}' but argument is of type 'int'
+ unsigned int XUartLite_Send(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7924	    332	   3120	  11376	   2c70	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:24:25 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+00:32:11 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../src/helloworld.c:71:7: error: 'i' undeclared (first use in this function)
+  for (i = 0; i < 4; i++) {
+       ^
+../src/helloworld.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:69:5: warning: unused variable 'byte_buffer' [-Wunused-variable]
+  u8 byte_buffer[4];
+     ^~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+00:32:43 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../src/helloworld.c:69:5: warning: unused variable 'byte_buffer' [-Wunused-variable]
+  u8 byte_buffer[4];
+     ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7828	    328	   3108	  11264	   2c00	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:32:51 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7828	    328	   3108	  11264	   2c00	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:33:02 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sensor_fusion_handler':
+../src/helloworld.c:69:5: warning: unused variable 'byte' [-Wunused-variable]
+  u8 byte;
+     ^~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7828	    328	   3108	  11264	   2c00	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:33:10 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7828	    328	   3108	  11264	   2c00	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+00:33:26 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+01:48:53 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+01:49:58 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:00:40 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:05:01 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:06:33 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:10:28 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:28:12 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:34:03 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7756	    328	   3108	  11192	   2bb8	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+02:34:50 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:41:38 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:44:56 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:48:27 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:55:23 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:56:26 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7732	    328	   3108	  11168	   2ba0	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+02:56:43 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+02:58:15 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+03:10:58 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+03:12:17 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+03:18:05 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+03:20:35 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+03:24:55 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+03:27:25 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:28:26 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:31:48 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:34:44 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:39:13 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:45:45 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:52:43 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:55:20 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+04:59:54 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+05:11:52 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+05:14:30 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+05:20:27 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+05:23:05 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+05:28:20 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+05:35:47 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+21:47:15 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+21:49:04 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+21:52:12 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+21:58:33 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+22:00:59 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7756	    328	   3108	  11192	   2bb8	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+22:02:55 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+22:05:58 **** Auto Build of configuration Debug for project bluetooth_demo ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bluetooth_demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: bluetooth_demo.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bluetooth_demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bluetooth_demo.elf"  ./src/helloworld.o ./src/platform.o ./src/sensor_fusion_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bluetooth_demo.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bluetooth_demo.elf  |tee "bluetooth_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7780	    328	   3108	  11216	   2bd0	bluetooth_demo.elf
+Finished building: bluetooth_demo.elf.size
+ 
+22:06:11 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.
+22:08:51 **** Incremental Build of configuration Debug for project bluetooth_demo ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Mar 27 23:53:19 2019
+# Process ID: 15936
+# Current directory: C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/bluetooth_demo_sensor_fusion_axi_0_0_synth_1
+# Command line: vivado.exe -log bluetooth_demo_sensor_fusion_axi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bluetooth_demo_sensor_fusion_axi_0_0.tcl
+# Log file: C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/bluetooth_demo_sensor_fusion_axi_0_0_synth_1/bluetooth_demo_sensor_fusion_axi_0_0.vds
+# Journal file: C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/bluetooth_demo_sensor_fusion_axi_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bluetooth_demo_sensor_fusion_axi_0_0.tcl -notrace

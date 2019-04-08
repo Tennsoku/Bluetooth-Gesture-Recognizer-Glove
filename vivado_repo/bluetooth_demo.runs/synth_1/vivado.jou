@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Mar 28 00:09:38 2019
+# Process ID: 10836
+# Current directory: C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/synth_1
+# Command line: vivado.exe -log bluetooth_demo_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bluetooth_demo_wrapper.tcl
+# Log file: C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/synth_1/bluetooth_demo_wrapper.vds
+# Journal file: C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bluetooth_demo_wrapper.tcl -notrace

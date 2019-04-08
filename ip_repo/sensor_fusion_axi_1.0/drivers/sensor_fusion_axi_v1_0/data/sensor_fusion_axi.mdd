@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER sensor_fusion_axi
+	OPTION supported_peripherals = (sensor_fusion_axi);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = sensor_fusion_axi;
+END DRIVER

@@ -1,0 +1,17 @@
+{
+  "name": "bluetooth-gesture-glove",
+  "version": "0.0.1",
+  "description": "ECE532 Group Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "bluetooth-serial-port": "^2.1.7",
+    "nan": "^2.13.2",
+    "node-bluetooth": "^1.2.5"
+  }
+}

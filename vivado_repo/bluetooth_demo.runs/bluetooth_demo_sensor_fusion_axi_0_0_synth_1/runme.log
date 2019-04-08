@@ -1,0 +1,1197 @@
+
+*** Running vivado
+    with args -log bluetooth_demo_sensor_fusion_axi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bluetooth_demo_sensor_fusion_axi_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source bluetooth_demo_sensor_fusion_axi_0_0.tcl -notrace
+Command: synth_design -top bluetooth_demo_sensor_fusion_axi_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8868 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 444.539 ; gain = 100.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bluetooth_demo_sensor_fusion_axi_0_0' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ip/bluetooth_demo_sensor_fusion_axi_0_0/synth/bluetooth_demo_sensor_fusion_axi_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'sensor_fusion_axi_v1_0' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_INTR_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_INTR_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_NUM_OF_INTR bound to: 1 - type: integer 
+	Parameter C_INTR_SENSITIVITY bound to: -1 - type: integer 
+	Parameter C_INTR_ACTIVE_STATE bound to: -1 - type: integer 
+	Parameter C_IRQ_SENSITIVITY bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sensor_fusion_axi_v1_0_S00_AXI' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:233]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:234]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:235]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:236]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:237]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'sensor_fusion_axi_v1_0_S00_AXI' (1#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sensor_fusion_axi_v1_0_S_AXI_INTR' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S_AXI_INTR.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_NUM_OF_INTR bound to: 1 - type: integer 
+	Parameter C_INTR_SENSITIVITY bound to: -1 - type: integer 
+	Parameter C_INTR_ACTIVE_STATE bound to: -1 - type: integer 
+	Parameter C_IRQ_SENSITIVITY bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE_STATE bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element intr_all_ff_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S_AXI_INTR.v:514]
+INFO: [Synth 8-6155] done synthesizing module 'sensor_fusion_axi_v1_0_S_AXI_INTR' (2#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0_S_AXI_INTR.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sensor_fusion' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/sensor_fusion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gyro_wrapper' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/gyro_wrapper.v:23]
+	Parameter x_zero_rate bound to: 7'b1111001 
+	Parameter y_zero_rate bound to: 7'b0000111 
+	Parameter z_zero_rate bound to: 7'b1110011 
+INFO: [Synth 8-6157] synthesizing module 'gyro_interface' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/gyro_interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_gyro.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter INIT bound to: 4'b0001 
+	Parameter RUN bound to: 4'b0010 
+	Parameter TRANSFER_ADDRESS bound to: 4'b0011 
+	Parameter TRANSFER_DATA bound to: 4'b0100 
+	Parameter TRANSFER_END bound to: 4'b0101 
+	Parameter READ_X_L bound to: 4'b0110 
+	Parameter READ_X_H bound to: 4'b0111 
+	Parameter READ_Y_L bound to: 4'b1000 
+	Parameter READ_Y_H bound to: 4'b1001 
+	Parameter READ_Z_L bound to: 4'b1010 
+	Parameter READ_Z_H bound to: 4'b1011 
+	Parameter DONE_READ bound to: 4'b1100 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_gyro.v:97]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_gyro.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (3#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_gyro.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_interface' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_gyro.v:25]
+	Parameter SPI_CLK_COUNT_MAX bound to: 12'b111111111111 
+	Parameter RX_COUNT_MAX bound to: 4'b1000 
+	Parameter RxTxTYPE_idle bound to: 3'b000 
+	Parameter RxTxTYPE_rx_tx bound to: 3'b001 
+	Parameter RxTxTYPE_hold bound to: 3'b010 
+	Parameter RxTxTYPE_end bound to: 3'b011 
+	Parameter RxTxTYPE_buffer bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_gyro.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'spi_interface' (4#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_gyro.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'gyro_interface' (5#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/gyro_interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gyro_wrapper' (6#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/gyro_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'yaw_filter' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:23]
+	Parameter zero_rate bound to: 7'b1010001 
+INFO: [Synth 8-6155] done synthesizing module 'yaw_filter' (7#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'acl_wrapper' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/acl_wrapper.v:23]
+	Parameter x_zero_rate bound to: 16'b1111111111111011 
+	Parameter y_zero_rate bound to: 16'b1111111111000110 
+	Parameter z_zero_rate bound to: 16'b1111111101100100 
+INFO: [Synth 8-6157] synthesizing module 'acl_interface' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/acl_interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_master_acl' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_acl.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter INIT bound to: 4'b0001 
+	Parameter RUN bound to: 4'b0010 
+	Parameter TRANSFER_COMMAND bound to: 4'b0011 
+	Parameter TRANSFER_ADDRESS bound to: 4'b0100 
+	Parameter TRANSFER_DATA bound to: 4'b0101 
+	Parameter TRANSFER_END bound to: 4'b0110 
+	Parameter READ_X_L bound to: 4'b0111 
+	Parameter READ_X_H bound to: 4'b1000 
+	Parameter READ_Y_L bound to: 4'b1001 
+	Parameter READ_Y_H bound to: 4'b1010 
+	Parameter READ_Z_L bound to: 4'b1011 
+	Parameter READ_Z_H bound to: 4'b1100 
+	Parameter DONE_READ bound to: 4'b1101 
+	Parameter READ_REG bound to: 8'b00001011 
+	Parameter WRITE_REG bound to: 8'b00001010 
+	Parameter READ_FIFO bound to: 8'b00001101 
+	Parameter XDATA_L bound to: 8'b00001110 
+	Parameter TIME_ACT bound to: 8'b00100010 
+	Parameter THRESH_ACT_L bound to: 8'b00100000 
+	Parameter THRESH_INACT_L bound to: 8'b00100011 
+	Parameter TIME_INACT_L bound to: 8'b00100101 
+	Parameter ACT_INACT_CTL bound to: 8'b00100111 
+	Parameter INTMAP1 bound to: 8'b00101010 
+	Parameter INTMAP2 bound to: 8'b00101011 
+	Parameter FILTER_CTL bound to: 8'b00101100 
+	Parameter POWER_CTL bound to: 8'b00101101 
+	Parameter V_TIME_ACT bound to: 8'b00000011 
+	Parameter V_THRESH_ACT bound to: 8'b00001111 
+	Parameter V_THRESH_INACT bound to: 8'b00001000 
+	Parameter V_TIME_INACT bound to: 8'b00000100 
+	Parameter V_ACT_INACT_CTL bound to: 8'b00000000 
+	Parameter V_FILTER_CTL bound to: 8'b01010011 
+	Parameter V_POWER_CTL bound to: 8'b00000010 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_acl.v:128]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_acl.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master_acl' (8#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_acl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_interface_acl' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_acl.v:25]
+	Parameter SPI_CLK_COUNT_MAX bound to: 12'b111111111111 
+	Parameter RX_COUNT_MAX bound to: 4'b1000 
+	Parameter RxTxTYPE_idle bound to: 3'b000 
+	Parameter RxTxTYPE_rx_tx bound to: 3'b001 
+	Parameter RxTxTYPE_hold bound to: 3'b010 
+	Parameter RxTxTYPE_end bound to: 3'b011 
+	Parameter RxTxTYPE_buffer bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_acl.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'spi_interface_acl' (9#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_acl.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'acl_interface' (10#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/acl_interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_sqrt' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_sqrt.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter LOAD bound to: 2'b01 
+	Parameter RUNNING bound to: 2'b10 
+	Parameter DONE bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'cordic_sqrt' (11#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_sqrt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_atan' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_atan.v:23]
+	Parameter stages bound to: 4'b1111 
+	Parameter max bound to: 5'b11111 
+	Parameter IDLE bound to: 2'b00 
+	Parameter LOAD bound to: 2'b01 
+	Parameter RUNNING bound to: 2'b10 
+	Parameter DONE bound to: 2'b11 
+INFO: [Synth 8-3876] $readmem data file 'tan_values.mem' is read successfully [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_atan.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_atan' (12#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_atan.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'acl_wrapper' (13#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/acl_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'complementary_filter' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/complementary_filter.v:23]
+	Parameter gyro_x bound to: 8'b01111001 
+	Parameter gyro_y bound to: 8'b00000111 
+	Parameter gyro_z bound to: 8'b01110011 
+	Parameter acl_x bound to: 16'b1111111111111011 
+	Parameter acl_y bound to: 16'b1111111111000110 
+	Parameter acl_z bound to: 16'b1111111101100100 
+INFO: [Synth 8-6157] synthesizing module 'axis_data_filter' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:23]
+	Parameter zero_rate_gyro bound to: 7'b1111001 
+	Parameter zero_rate_acl bound to: 16'b1111111111111011 
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_filter' (14#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_filter__parameterized0' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:23]
+	Parameter zero_rate_gyro bound to: 7'b0000111 
+	Parameter zero_rate_acl bound to: 16'b1111111111000110 
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_filter__parameterized0' (14#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'yaw_filter__parameterized0' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:23]
+	Parameter zero_rate bound to: 7'b1110011 
+INFO: [Synth 8-6155] done synthesizing module 'yaw_filter__parameterized0' (14#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'complementary_filter' (15#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/complementary_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sensor_fusion' (16#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/sensor_fusion.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sensor_fusion_axi_v1_0' (17#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/hdl/sensor_fusion_axi_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluetooth_demo_sensor_fusion_axi_0_0' (18#1) [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ip/bluetooth_demo_sensor_fusion_axi_0_0/synth/bluetooth_demo_sensor_fusion_axi_0_0.v:56]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[15]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[14]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[13]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[12]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[11]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[10]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[9]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[8]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[7]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[6]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[5]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[4]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[3]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[2]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[1]
+WARNING: [Synth 8-3331] design complementary_filter has unconnected port yaw_acl[0]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[31]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[30]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[29]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[28]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[27]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[26]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[25]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[24]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[23]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[22]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[21]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[20]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[19]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[18]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[17]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[16]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[15]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[14]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[13]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[12]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[11]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[10]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[9]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[8]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[7]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[6]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[5]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[4]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[3]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[2]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WDATA[1]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S_AXI_INTR has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design sensor_fusion_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 496.953 ; gain = 153.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 497.371 ; gain = 153.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 497.371 ; gain = 153.621
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.079 . Memory (MB): peak = 840.262 ; gain = 3.125
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 840.262 ; gain = 496.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 840.262 ; gain = 496.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 840.262 ; gain = 496.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'RxTxSTATE_reg' in module 'spi_interface'
+INFO: [Synth 8-5546] ROM "sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RxTxSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element axis_normalized_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:69]
+INFO: [Synth 8-5544] ROM "transfer_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'sclk_disable_reg' into 'chip_select_reg' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_acl.v:95]
+WARNING: [Synth 8-6014] Unused sequential element sclk_disable_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_interface_acl.v:95]
+INFO: [Synth 8-802] inferred FSM for state register 'RxTxSTATE_reg' in module 'spi_interface_acl'
+INFO: [Synth 8-5546] ROM "sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RxTxSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'cordic_sqrt'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_atan.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_atan.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_atan.v:105]
+INFO: [Synth 8-5545] ROM "x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "tan_values" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'cordic_atan'
+DSP Debug: swapped A/B pins for adder 000000002BF6FD60
+DSP Debug: swapped A/B pins for adder 000000002BF6F5E0
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element gyro_axis_norm_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:84]
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element gyro_axis_norm_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:84]
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element axis_normalized_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:69]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           RxTxTYPE_idle |                              000 |                              000
+          RxTxTYPE_rx_tx |                              001 |                              001
+         RxTxTYPE_buffer |                              010 |                              100
+           RxTxTYPE_hold |                              011 |                              010
+            RxTxTYPE_end |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RxTxSTATE_reg' using encoding 'sequential' in module 'spi_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           RxTxTYPE_idle |                              000 |                              000
+          RxTxTYPE_rx_tx |                              001 |                              001
+         RxTxTYPE_buffer |                              010 |                              100
+           RxTxTYPE_hold |                              011 |                              010
+            RxTxTYPE_end |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RxTxSTATE_reg' using encoding 'sequential' in module 'spi_interface_acl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                    LOAD |                             0010 |                               01
+                 RUNNING |                             0100 |                               10
+                    DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'cordic_sqrt'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                    LOAD |                             0010 |                               01
+                 RUNNING |                             0100 |                               10
+                    DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'cordic_atan'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 840.262 ; gain = 496.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 4     
+	   2 Input     33 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 15    
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               48 Bit    Registers := 3     
+	               40 Bit    Registers := 2     
+	               35 Bit    Registers := 2     
+	               32 Bit    Registers := 13    
+	               16 Bit    Registers := 23    
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 78    
++---Multipliers : 
+	                33x33  Multipliers := 2     
+	                 5x35  Multipliers := 2     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 3     
+	  14 Input     48 Bit        Muxes := 4     
+	  15 Input     48 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 15    
+	   8 Input     32 Bit        Muxes := 1     
+	  17 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 2     
+	  14 Input     16 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 10    
+	  15 Input     16 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 3     
+	  18 Input      8 Bit        Muxes := 4     
+	  14 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   5 Input      8 Bit        Muxes := 3     
+	  23 Input      8 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 3     
+	  15 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 2     
+	  14 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 3     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 39    
+	   6 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 22    
+	   5 Input      1 Bit        Muxes := 29    
+	  15 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sensor_fusion_axi_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module sensor_fusion_axi_v1_0_S_AXI_INTR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	  14 Input     48 Bit        Muxes := 2     
+	  14 Input     16 Bit        Muxes := 3     
+	  18 Input      8 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+Module spi_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 10    
+Module gyro_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+Module yaw_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module spi_master_acl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	  15 Input     48 Bit        Muxes := 2     
+	  15 Input     16 Bit        Muxes := 3     
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  15 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 1     
+Module spi_interface_acl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 9     
+Module cordic_sqrt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                33x33  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+Module cordic_atan 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  17 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 5     
+Module acl_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 3     
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module axis_data_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                 5x35  Multipliers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module axis_data_filter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                 5x35  Multipliers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module yaw_filter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module complementary_filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module sensor_fusion 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "C0/send_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "C1/sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "C1/sclk_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/cordic_sqrt.v:43]
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+INFO: [Synth 8-5545] ROM "x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP z_sq, operation Mode is: A*B.
+DSP Report: operator z_sq is absorbed into DSP z_sq.
+DSP Report: Generating DSP xz, operation Mode is: PCIN+A*B.
+DSP Report: operator xz is absorbed into DSP xz.
+DSP Report: operator x_sq is absorbed into DSP xz.
+DSP Report: Generating DSP yz, operation Mode is: C+A*B.
+DSP Report: operator yz is absorbed into DSP yz.
+DSP Report: operator y_sq is absorbed into DSP yz.
+INFO: [Synth 8-4471] merging register 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/acc_reg[34:0]' into 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/acc_reg[34:0]' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:66]
+INFO: [Synth 8-4471] merging register 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/acc_reg[34:0]' into 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/acc_reg[34:0]' [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:66]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/y_axis_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_gyro.v:73]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/z_axis_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/spi_master_gyro.v:74]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/acc_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:66]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/acc_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:66]
+INFO: [Synth 8-5546] ROM "inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_interface/sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_interface/sclk_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_interface/sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_interface/sclk_buffer" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/finger_angle_integrator/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:85]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/finger_angle_integrator/increment_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:70]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/finger_angle_integrator/axis_normalized_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:69]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/gyro_axis_norm_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:84]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/gyro_axis_norm_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/axis_data_filter.v:84]
+WARNING: [Synth 8-6014] Unused sequential element inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/axis_normalized_reg was removed.  [c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ipshared/f5a2/src/yaw_filter.v:69]
+DSP Report: Generating DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg, operation Mode is: (C'+(A2*(B:0x16f))')'.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/gyro_axis_norm_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/acc_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/increment_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg.
+DSP Report: operator inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum00 is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg.
+DSP Report: operator inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/increment0 is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/sum0_reg.
+DSP Report: Generating DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg, operation Mode is: (C'+(A2*(B:0x16f))')'.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/gyro_axis_norm_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/acc_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/increment_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg.
+DSP Report: operator inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum00 is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg.
+DSP Report: operator inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/increment0 is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/sum0_reg.
+DSP Report: Generating DSP inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg, operation Mode is: (P+(A2*(B:0x16f))')'.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/axis_normalized_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg.
+DSP Report: register inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/increment_reg is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg.
+DSP Report: operator inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc0 is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg.
+DSP Report: operator inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/increment0 is absorbed into DSP inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/acc_reg.
+DSP Report: Generating DSP inst/sensor_fusion_inst/finger_angle_integrator/acc_reg, operation Mode is: (P+(A2*(B:0x16f))')'.
+DSP Report: register inst/sensor_fusion_inst/finger_angle_integrator/axis_normalized_reg is absorbed into DSP inst/sensor_fusion_inst/finger_angle_integrator/acc_reg.
+DSP Report: register inst/sensor_fusion_inst/finger_angle_integrator/acc_reg is absorbed into DSP inst/sensor_fusion_inst/finger_angle_integrator/acc_reg.
+DSP Report: register inst/sensor_fusion_inst/finger_angle_integrator/increment_reg is absorbed into DSP inst/sensor_fusion_inst/finger_angle_integrator/acc_reg.
+DSP Report: operator inst/sensor_fusion_inst/finger_angle_integrator/acc0 is absorbed into DSP inst/sensor_fusion_inst/finger_angle_integrator/acc_reg.
+DSP Report: operator inst/sensor_fusion_inst/finger_angle_integrator/increment0 is absorbed into DSP inst/sensor_fusion_inst/finger_angle_integrator/acc_reg.
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_awprot[2]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_awprot[1]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_awprot[0]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[31]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[30]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[29]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[28]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[27]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[26]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[25]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[24]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[23]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[22]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[21]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[20]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[19]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[18]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[17]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[16]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[15]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[14]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[13]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[12]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[11]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[10]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[9]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[8]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[7]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[6]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[5]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[4]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[3]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[2]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wdata[1]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wstrb[3]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wstrb[2]
+WARNING: [Synth 8-3331] design bluetooth_demo_sensor_fusion_axi_0_0 has unconnected port s_axi_intr_wstrb[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/DATA_reg[0]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/DATA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/ADDRESS_reg[3]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/ADDRESS_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/ADDRESS_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/DATA_reg[4]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/DATA_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/uacl_wrapper/uacl_interface/C0/ADDRESS_reg[4]' (FDRE) to 'inst/sensor_fusion_inst/uacl_wrapper/uacl_interface/C0/ADDRESS_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/DATA_reg[0]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/DATA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/ADDRESS_reg[3]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/ADDRESS_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/ADDRESS_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/DATA_reg[4]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/DATA_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/ADDRESS_reg[6]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/ADDRESS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/DATA_reg[6]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/DATA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/ADDRESS_reg[6]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/ADDRESS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/DATA_reg[6]' (FDRE) to 'inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/DATA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/uacl_wrapper/uacl_interface/C0/ADDRESS_reg[6]' (FDRE) to 'inst/sensor_fusion_inst/uacl_wrapper/uacl_interface/C0/ADDRESS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/en_reg[0]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/en_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/en_reg[1]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/en_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/en_reg[0]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/en_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/en_reg[1]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/en_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_inst/uacl_wrapper /\uacl_interface/C0/ADDRESS_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/en_reg[2]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/en_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/en_reg[2]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/uyaw_filter/en_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/en_reg[3]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/en_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[15]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[16]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[17]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[18]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[19]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[20]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[21]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[22]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[23]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[24]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[25]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[26]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[27]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[28]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[29]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[30]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rresp_reg[0]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[1]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[2]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[3]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[4]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[5]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[6]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[7]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[8]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[9]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[10]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[11]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[12]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[13]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[14]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[15]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[16]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[17]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[18]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[19]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[20]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[21]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[22]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[23]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[24]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[25]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[26]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[27]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[28]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[29]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[30]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_bresp_reg[0]' (FDRE) to 'inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/en_reg[4]' (FDR) to 'inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/en_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/sensor_fusion_inst/ucomplementary_filter/done_latch_x_reg' (FDRE) to 'inst/sensor_fusion_inst/ucomplementary_filter/done_latch_y_reg'
+WARNING: [Synth 8-3332] Sequential element (uacl_interface/C0/ADDRESS_reg[7]) is unused and will be removed from module acl_wrapper.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[31]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[30]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[29]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[28]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[27]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[26]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[25]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[24]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[23]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[22]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[21]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[20]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[19]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[18]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[17]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[16]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[15]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[14]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[13]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[12]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[11]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[10]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[9]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[8]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[7]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[6]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[5]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[4]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[3]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[2]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/slv_reg0_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/ADDRESS_reg[4]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/product0_reg[39]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/product0_reg[3]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/product0_reg[2]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/product0_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/pitch_filter/product0_reg[0]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/product0_reg[39]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/product0_reg[3]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/product0_reg[2]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/product0_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ucomplementary_filter/roll_filter/product0_reg[0]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/finger_angle_integrator/en_reg[2]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/ADDRESS_reg[4]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[47]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[46]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[45]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[44]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[43]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[42]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[41]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[40]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[39]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[38]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[37]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[36]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[35]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[34]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[33]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[32]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[31]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[30]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[29]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[28]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[27]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[26]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[25]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[24]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[23]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[22]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[21]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[20]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[19]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[18]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[17]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/axis_data_reg[16]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_bresp_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_awaddr_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_awaddr_reg[0]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_araddr_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_araddr_reg[0]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rdata_reg[31]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sensor_fusion_axi_v1_0_S_AXI_INTR_inst/axi_rresp_reg[1]) is unused and will be removed from module bluetooth_demo_sensor_fusion_axi_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 840.262 ; gain = 496.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cordic_sqrt      | A*B                   | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | (PCIN>>17)+A*B        | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | A*B                   | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | (PCIN>>17)+A*B        | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | A*B                   | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | (PCIN>>17)+A*B        | 17     | 17     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | A*B                   | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_sqrt      | (PCIN>>17)+A*B        | 18     | 17     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|acl_wrapper      | A*B                   | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|acl_wrapper      | PCIN+A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|acl_wrapper      | C+A*B                 | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|axis_data_filter | (C'+(A2*(B:0x16f))')' | 16     | 10     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 1    | 
+|axis_data_filter | (C'+(A2*(B:0x16f))')' | 16     | 10     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 1    | 
+|yaw_filter       | (P+(A2*(B:0x16f))')'  | 16     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|yaw_filter       | (P+(A2*(B:0x16f))')'  | 16     | 10     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:59 . Memory (MB): peak = 907.707 ; gain = 563.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:00 . Memory (MB): peak = 911.090 ; gain = 567.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop inst/sensor_fusion_inst/uacl_wrapper/uacl_interface/C0/z_axis_reg[15] is being inverted and renamed to inst/sensor_fusion_inst/uacl_wrapper/uacl_interface/C0/z_axis_reg[15]_inv.
+INFO: [Synth 8-5365] Flop inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/x_axis_reg[15] is being inverted and renamed to inst/sensor_fusion_inst/ugyro_wrapper1/ugyro_interface/gyro_spi_master/x_axis_reg[15]_inv.
+INFO: [Synth 8-5365] Flop inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/x_axis_reg[15] is being inverted and renamed to inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/x_axis_reg[15]_inv.
+INFO: [Synth 8-5365] Flop inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/z_axis_reg[15] is being inverted and renamed to inst/sensor_fusion_inst/ugyro_wrapper0/ugyro_interface/gyro_spi_master/z_axis_reg[15]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   323|
+|2     |DSP48E1   |     9|
+|3     |DSP48E1_2 |     4|
+|4     |DSP48E1_3 |     1|
+|5     |DSP48E1_4 |     1|
+|6     |LUT1      |   423|
+|7     |LUT2      |   614|
+|8     |LUT3      |   496|
+|9     |LUT4      |   187|
+|10    |LUT5      |   324|
+|11    |LUT6      |   325|
+|12    |MUXF7     |    16|
+|13    |FDRE      |  1247|
+|14    |FDSE      |    21|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+----------------------------------+------+
+|      |Instance                                   |Module                            |Cells |
++------+-------------------------------------------+----------------------------------+------+
+|1     |top                                        |                                  |  3991|
+|2     |  inst                                     |sensor_fusion_axi_v1_0            |  3991|
+|3     |    sensor_fusion_axi_v1_0_S00_AXI_inst    |sensor_fusion_axi_v1_0_S00_AXI    |    53|
+|4     |    sensor_fusion_axi_v1_0_S_AXI_INTR_inst |sensor_fusion_axi_v1_0_S_AXI_INTR |    50|
+|5     |    sensor_fusion_inst                     |sensor_fusion                     |  3888|
+|6     |      finger_angle_integrator              |yaw_filter                        |    83|
+|7     |      uacl_wrapper                         |acl_wrapper                       |  2261|
+|8     |        atan0                              |cordic_atan                       |   536|
+|9     |        atan1                              |cordic_atan_4                     |   536|
+|10    |        sqrt0                              |cordic_sqrt                       |   394|
+|11    |        sqrt1                              |cordic_sqrt_5                     |   394|
+|12    |        uacl_interface                     |acl_interface                     |   393|
+|13    |          C0                               |spi_master_acl                    |   287|
+|14    |          C1                               |spi_interface_acl                 |   106|
+|15    |      ucomplementary_filter                |complementary_filter              |   813|
+|16    |        pitch_filter                       |axis_data_filter                  |   341|
+|17    |        roll_filter                        |axis_data_filter__parameterized0  |   375|
+|18    |        uyaw_filter                        |yaw_filter__parameterized0        |    94|
+|19    |      ugyro_wrapper0                       |gyro_wrapper                      |   459|
+|20    |        ugyro_interface                    |gyro_interface_1                  |   381|
+|21    |          gyro_spi_interface               |spi_interface_2                   |   117|
+|22    |          gyro_spi_master                  |spi_master_3                      |   264|
+|23    |      ugyro_wrapper1                       |gyro_wrapper_0                    |   246|
+|24    |        ugyro_interface                    |gyro_interface                    |   229|
+|25    |          gyro_spi_interface               |spi_interface                     |   109|
+|26    |          gyro_spi_master                  |spi_master                        |   120|
++------+-------------------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 940.871 ; gain = 597.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 77 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 940.871 ; gain = 254.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 940.871 ; gain = 597.121
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 354 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+271 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 941.043 ; gain = 608.762
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/bluetooth_demo_sensor_fusion_axi_0_0_synth_1/bluetooth_demo_sensor_fusion_axi_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.srcs/sources_1/bd/bluetooth_demo/ip/bluetooth_demo_sensor_fusion_axi_0_0/bluetooth_demo_sensor_fusion_axi_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 25 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason/Documents/University/Year_4/ECE532/Project/bluetooth_demo/bluetooth_demo.runs/bluetooth_demo_sensor_fusion_axi_0_0_synth_1/bluetooth_demo_sensor_fusion_axi_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bluetooth_demo_sensor_fusion_axi_0_0_utilization_synth.rpt -pb bluetooth_demo_sensor_fusion_axi_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 941.043 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 23:54:36 2019...

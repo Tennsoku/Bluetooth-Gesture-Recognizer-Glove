@@ -1,0 +1,550 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Mar 28 00:13:20 2019
+| Host         : Jason-Antec running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file bluetooth_demo_wrapper_methodology_drc_routed.rpt -pb bluetooth_demo_wrapper_methodology_drc_routed.pb -rpx bluetooth_demo_wrapper_methodology_drc_routed.rpx
+| Design       : bluetooth_demo_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 102
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                   | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                              | 1          |
+| TIMING-16 | Warning  | Large setup violation                          | 64         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                    | 3          |
+| TIMING-18 | Warning  | Missing input or output delay                  | 31         |
++-----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell bluetooth_demo_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous reset pin(s) bluetooth_demo_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_bluetooth_demo_clk_wiz_1_0 and clk_out1_bluetooth_demo_clk_wiz_1_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_bluetooth_demo_clk_wiz_1_0] -to [get_clocks clk_out1_bluetooth_demo_clk_wiz_1_0_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_bluetooth_demo_clk_wiz_1_0_1 and clk_out1_bluetooth_demo_clk_wiz_1_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_bluetooth_demo_clk_wiz_1_0_1] -to [get_clocks clk_out1_bluetooth_demo_clk_wiz_1_0]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -4.428 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[16]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -4.428 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[17]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -4.428 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[18]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -4.428 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[29]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -4.446 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[14]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -4.464 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[10]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -4.482 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[13]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -4.482 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[28]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -4.482 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[30]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -4.482 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[31]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -4.620 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[24]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -4.620 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[25]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -4.620 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[26]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -4.620 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[27]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[12]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[20]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[21]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[22]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[23]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[13]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[18]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[19]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[26]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[28]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[29]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[30]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -4.625 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[31]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -4.640 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[11]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -4.640 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[4]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -4.640 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[8]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -4.654 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[10]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -4.654 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[12]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -4.654 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[14]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -4.654 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[15]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -4.655 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[9]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -4.655 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[9]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[1]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -4.655 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[9]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[3]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -4.655 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[9]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[5]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -4.655 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[9]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[6]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -4.676 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[2]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -4.676 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[7]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -4.704 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -4.704 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[2]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -4.704 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[6]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -4.704 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[7]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -4.758 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[15]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -4.762 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[4]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -4.762 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[5]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -4.764 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[19]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -4.764 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt0/y_reg[9]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -4.766 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[11]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -4.767 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[20]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -4.767 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[21]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -4.767 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[22]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -4.767 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[23]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -4.797 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[3]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -4.798 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[16]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -4.798 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[17]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -4.798 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[9]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -4.803 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[24]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -4.803 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[25]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -4.803 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[27]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -4.803 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[8]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -4.861 ns between bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[0]/C (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0_1) and bluetooth_demo_i/sensor_fusion_axi_0/inst/sensor_fusion_inst/uacl_wrapper/sqrt1/y_reg[1]/CE (clocked by clk_out1_bluetooth_demo_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin bluetooth_demo_i/hex_display_controll_0/inst/ucounter/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin bluetooth_demo_i/hex_display_controll_0/inst/ucounter/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin bluetooth_demo_i/hex_display_controll_0/inst/ucounter/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on BTNC relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on CPU_RESETN relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on JA[1] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on JA[2] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on JA[3] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on JA[4] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on JA[5] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on JB[1] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on JB[2] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on JB[3] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on JB[4] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on JB[5] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on JC[1] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on JC[2] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on JC[3] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on JC[4] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on JC[5] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on bt_uart_rxd relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on usb_uart_rxd relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on LED[0] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on LED[1] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on LED[2] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on SEG[0] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on SEG[1] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on SEG[2] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on SEG[3] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on SEG[4] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on SEG[5] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on SEG[6] relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on bt_uart_txd relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on usb_uart_txd relative to clock(s) CLK100Mhz, sys_clk_pin
+Related violations: <none>
+
+
